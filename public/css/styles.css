@@ -1,0 +1,109 @@
+/* General Reset */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  ul, li, h1, p {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* Navbar */
+  .navbar {
+    background-color: rgba(61, 35, 20, 0.8);
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  /* Logo */
+  .navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    margin-right: 20px;
+  }
+  
+  /* Navigation Links */
+  .nav-links {
+    display: flex;
+    gap: 20px;
+    flex-grow: 1; /* Pushes the links toward the left */
+  }
+  
+  .nav-links a {
+    color: white;
+    font-size: 16px;
+  }
+  
+  .nav-links a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Hours Section */
+  .hours {
+    font-size: 14px;
+    color: white;
+    text-align: right;
+    white-space: nowrap; /* Prevent wrapping */
+    margin-left: auto; /* Pushes the hours section to the far right */
+  }
+  
+  /* Hero Section */
+  .hero {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Moves the image to the background */
+  }
+  
+  .hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+  }
+  
+  .hero-content h1 {
+    font-size: 4rem;
+    margin-bottom: 10px;
+  }
+  
+  .hero-content p {
+    font-size: 1.5rem;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #3d2314;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+  }
+  

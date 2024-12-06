@@ -1,0 +1,16 @@
+{
+  "name": "2830finalproject",
+  "version": "1.0.0",
+  "description": "Hopefully this gets done lol",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
