@@ -41,20 +41,44 @@
     </div>
 
     <div class="contact-form">
-      <h2>Send Us a Message</h2>
-      <form action="/submit" method="POST">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" placeholder="Your Full Name" required>
-        
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" placeholder="Your Email Address" required>
-        
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
-        
-        <button type="submit" class="btn-submit">Submit</button>
-      </form>
-    </div>
+  <h2>Send Us a Message</h2>
+  <form id="contactForm">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+    
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+    
+    <button type="submit" class="btn-submit">Submit</button>
+  </form>
+  <p id="formFeedback" style="display: none; color: green; margin-top: 10px;">Thank you! Your message has been sent.</p>
+</div>
+
+<script>
+  // Add an event listener to the form
+  const form = document.getElementById('contactForm');
+  const feedback = document.getElementById('formFeedback');
+
+  form.addEventListener('submit', function(event) {
+    // Prevent the form's default submit behavior
+    event.preventDefault();
+
+    // Clear the form fields
+    form.reset();
+
+    // Display a success message
+    feedback.style.display = 'block';
+
+    // Optionally, hide the success message after a few seconds
+    setTimeout(() => {
+      feedback.style.display = 'none';
+    }, 5000);
+  });
+</script>
+
   <footer class="footer">
     <p>&copy; 2024 Frankie Tocco's. All rights reserved.</p>
   </footer>
