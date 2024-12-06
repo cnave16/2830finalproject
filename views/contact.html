@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <a href="/" class="logo">Frankie Tocco's</a>
+      <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/menu">Menu</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="content container">
+    <h1>Contact Us</h1>
+    <p>We’d love to hear from you! Get in touch with us through the following ways:</p>
+
+    <div class="contact-info">
+      <div class="contact-section">
+        <h2><span class="icon">📞</span> Phone</h2>
+        <p><a href="tel:+1234567890">+1 (234) 867-5309</a></p>
+      </div>
+      
+      <div class="contact-section">
+        <h2><span class="icon">📧</span> Email</h2>
+        <p><a href="mailto:info@frankietoccos.com">info@frankietoccos.com</a></p>
+      </div>
+      
+      <div class="contact-section">
+        <h2><span class="icon">📍</span> Address</h2>
+        <p>123 Main Street<br>Columbia, MO 65804</p>
+      </div>
+    </div>
+
+    <div class="contact-form">
+      <h2>Send Us a Message</h2>
+      <form action="/submit" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+        
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+        
+        <button type="submit" class="btn-submit">Submit</button>
+      </form>
+    </div>
+  <footer class="footer">
+    <p>&copy; 2024 Frankie Tocco's. All rights reserved.</p>
+  </footer>
+</body>
+</html>
