@@ -106,7 +106,62 @@ body {
     font-weight: bold;
   }
 
+  /* Reservation Section */
+  .reservation-section {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+    color: #333;
+  }
   
+  .reservation-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .reservation-section p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .reservation-form {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  .reservation-form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  .reservation-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .reservation-form .btn {
+    background-color: #3d2314;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .reservation-form .btn:hover {
+    background-color: #f2a900;
+    color: black;
+  }
+
+
   /* Footer */
   footer {
     background-color: #3d2314;
