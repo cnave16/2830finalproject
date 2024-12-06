@@ -24,6 +24,11 @@ app.get('/contact', (req, res) => {
   res.sendFile(path.join(__dirname, 'views', 'contact.html'));
 });
 
+// Route for Reservation Page
+app.get('/reservation', (req, res) => {
+  res.sendFile(path.join(__dirname, 'views', 'reservation.html'));
+});
+
 // Start the server
 app.listen(PORT, () => {
   console.log(`Server is running at http://localhost:${PORT}`);
